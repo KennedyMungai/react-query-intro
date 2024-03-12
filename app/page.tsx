@@ -53,12 +53,6 @@ export default function Home() {
 			{data?.map((item) => (
 				<div key={item.id}>{item.title}</div>
 			))}
-			<button
-				disabled={isPending}
-				onClick={() => newPostMutation.mutate('New Post')}
-			>
-				Add new
-			</button>
 		</main>
 	)
 }
